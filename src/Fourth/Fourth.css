@@ -102,15 +102,15 @@
     margin: 0 auto;
     margin-top: -150px;
     z-index: 1;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 150px;
-    border-bottom-left-radius: 150px;
+    border-top-left-radius: 950px;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 950px;
+    border-bottom-left-radius: 950px;
   }
   
   .fourth-right-container .white-content {
     z-index: 2;
-    position: relative;
+    position: absolute;
     width: 400px;
     height: 200px;
     margin: 0 auto;
@@ -121,11 +121,12 @@
   }
   
   .fourth-right-container .white-content h1 {
-    margin-bottom: 3px;
+    margin-top: 23px;
+    font-size: 1.7em;
   }
   
   .fourth-right-container .white-content h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 500;
   }
   
