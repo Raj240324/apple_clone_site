@@ -94,7 +94,7 @@
 }
 @media (max-width: 480px) {
   .second-container{
-    height:70vh;
+    height:60vh;
   }
   .second-container h1 {
     font-size: 2em;
