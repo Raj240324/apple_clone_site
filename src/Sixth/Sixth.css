@@ -1,0 +1,144 @@
+
+
+.sixth-container {
+  width: 100%;
+  height: 80vh;
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.sixth-left-container, .sixth-right-container {
+  background-color: rgb(245, 245, 247);
+  text-align: center;
+}
+
+.sixth-right-container {
+  margin-left: 12px;
+}
+
+.sixth-left-container h1, .sixth-right-container h1 {
+  margin-top: 60px;
+  margin-bottom: 7px;
+}
+
+.sixth-left-container h3, .sixth-right-container h3 {
+  margin-bottom: 13px;
+  font-weight: 500;
+}
+
+.sixth-left-container .more-btn, .sixth-right-container .estimate-btn {
+  padding: 7px 15px;
+  border-radius: 35px;
+  font-size: 14px;
+  background-color: rgb(0, 113, 227);
+  color: white;
+  outline: none;
+  border: none;
+  margin-right: 17px;
+  margin-bottom: 7px;
+}
+
+.sixth-left-container .more-btn:hover, .sixth-right-container .estimate-btn:hover {
+  background-color: rgb(0, 119, 237);
+}
+
+.sixth-left-container .buy-btn {
+  padding: 7px 15px;
+  border-radius: 35px;
+  font-size: 14px;
+  background: transparent;
+  color: rgb(0, 113, 227);
+  outline: none;
+  border: 1px solid rgb(0, 113, 227);
+  margin-bottom: 7px;
+}
+
+.sixth-left-container .buy-btn:hover {
+  background-color: rgb(0, 119, 237);
+  color: white;
+}
+
+.sixth-left-container .ipadmini {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 35px;
+}
+
+.sixth-right-container .iphonebox {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.sixth-left-container p {
+  color: rgb(110, 110, 115);
+}
+
+.sixth-left-container p sup {
+  font-size: 7px;
+  color: rgb(110, 110, 115);
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sixth-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .sixth-left-container, .sixth-right-container {
+    margin: 0 0 12px 0;
+  }
+
+  .sixth-left-container .ipadmini, .sixth-right-container .iphonebox {
+    width: 80%;
+    height: auto;
+  }
+
+  .sixth-left-container h1, .sixth-right-container h1 {
+    font-size: 1.5em;
+  }
+
+  .sixth-left-container h3, .sixth-right-container h3 {
+    font-size: 1.2em;
+  }
+
+ 
+
+  .sixth-left-container p, .sixth-right-container p {
+    font-size: 14px;
+  }
+
+  .sixth-left-container p sup {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sixth-left-container .ipadmini, .sixth-right-container .iphonebox {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .sixth-left-container h1, .sixth-right-container h1 {
+    font-size: 1.2em;
+  }
+
+ 
+
+  .sixth-left-container p, .sixth-right-container p {
+    font-size: 12px;
+  }
+
+  .sixth-left-container p sup {
+    font-size: 5px;
+  }
+}
