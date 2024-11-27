@@ -9,6 +9,7 @@
   color: white;
   text-align: center;
   font-size: 3.2em;
+  
 }
 .second-container h3 {
   color: white;
@@ -76,6 +77,7 @@
   }
   .second-container h1 {
     font-size: 2.5em;
+    margin-top: 20px;
   }
   .second-container h3 {
     font-size: 1.3em;
@@ -100,6 +102,7 @@
   }
   .second-container h1 {
     font-size: 2em;
+    margin-top: 20px;
   }
   .second-container h3 {
     font-size: 1.1em;
