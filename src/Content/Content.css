@@ -45,6 +45,11 @@
     margin-right: 20px;
   }
   }
+  @media (max-width: 1000px) {
+    .content-container hr{
+      margin-top: 20px;
+    }
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -60,6 +65,7 @@
     .content-container hr{
       margin-left: 20px;
       margin-right: 20px;
+      margin-top:20px;
     }
   }
   
@@ -74,6 +80,7 @@
     .content-container hr{
       margin-left: 15px;
       margin-right: 15px;
+      margin-top:20px;
     }
   }
   
