@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false); 
+  const toggleDropdown = () => {
+    if (window.innerWidth <= 768)
+    setIsOpen(!isOpen); };
+
+
+
+
   return (
     <>
     <div className="footer-container">
       <div className="alllist-container">
         <ul className="first-list">
-          <li>
+          <li onClick={toggleDropdown}>
             <strong>Shop and learn</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Store</a>
           </li>
@@ -43,17 +53,27 @@ const Footer = () => {
           <li>
             <a href=""></a>
           </li>
-          <li>
+          </div>
+          )}
+        <hr />
+          <li onClick={toggleDropdown}>
             <strong>Apple Wallet</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Wallet</a>
           </li>
+          </div>
+          )}
         </ul>
+        <hr />
         <ul className="second-list">
-          <li>
+          <li onClick={toggleDropdown}>
             <strong>Account</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Manage your Apple Account</a>
           </li>
@@ -66,9 +86,14 @@ const Footer = () => {
           <li>
             <a href=""></a>
           </li>
-          <li>
+          </div>
+          )}
+          <hr />
+          <li onClick={toggleDropdown}>
             <strong>Entertainment</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Apple1</a>
           </li>
@@ -90,11 +115,18 @@ const Footer = () => {
           <li>
             <a href="">Apple Store</a>
           </li>
+          </div>
+          )}
         </ul>
-        <ul className="third-list">
-          <li>
+        <hr />
+        <ul className="third-list" >
+
+      
+          <li onClick={toggleDropdown}>
             <strong>Apple Store</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Find a Store</a>
           </li>
@@ -107,9 +139,14 @@ const Footer = () => {
           <li>
             <a href="">Group Reservations</a>
           </li>
-          <li>
+          </div>
+        )}
+         <hr />
+          <li onClick={toggleDropdown}>
             <strong>Apple Camp</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Apple Trade In</a>
           </li>
@@ -131,11 +168,16 @@ const Footer = () => {
           <li>
             <a href="">Apple Store</a>
           </li>
+          </div>
+          )}
         </ul>
+        <hr />
         <ul className="fourth-list">
-          <li>
+          <li onClick={toggleDropdown}>
             <strong>For Business</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Apple and Business</a>
           </li>
@@ -145,11 +187,15 @@ const Footer = () => {
           <li>
             <a href=""></a>
           </li>
-          <li>
+          </div>)}
+          <hr />
+          <li onClick={toggleDropdown}>
             <strong>For Education</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
-            <strong>Apple and Education</strong>
+            <>Apple and Education</>
           </li>
           <li>
             <a href="">Shop for Education</a>
@@ -157,9 +203,13 @@ const Footer = () => {
           <li>
             <a href="">Shop for University</a>
           </li>
-          <li>
+         </div>)}
+         <hr />
+          <li onClick={toggleDropdown}>
             <strong>For Healthcare</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Apple in Healthcare</a>
           </li>
@@ -172,11 +222,16 @@ const Footer = () => {
           <li>
             <a href=""></a>
           </li>
+          </div>)}
         </ul>
+        <hr />
+      
         <ul className="fifth-list">
-          <li>
+          <li onClick={toggleDropdown}>
             <strong>Apple Values</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Accessibility</a>
           </li>
@@ -195,9 +250,13 @@ const Footer = () => {
           <li>
             <a href=""></a>
           </li>
-          <li>
+          </div>)}
+          <hr />
+          <li onClick={toggleDropdown}>
             <strong>About Apple</strong>
           </li>
+          {isOpen && (
+            <div className="dropdown-content">
           <li>
             <a href="">Newsroom</a>
           </li>
@@ -219,7 +278,9 @@ const Footer = () => {
           <li>
             <a href="">Contact Apple</a>
           </li>
+          </div>)}
         </ul>
+        <hr />
       </div>
 
       <div className="list-call">

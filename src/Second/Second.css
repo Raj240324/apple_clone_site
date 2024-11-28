@@ -1,6 +1,6 @@
 .second-container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: linear-gradient(rgb(14, 21, 75) 30%, rgb(96, 112, 189), white);
   padding: 40px 0;
   margin-top: 12px;
@@ -71,7 +71,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .second-container{
-    height:90vh;
+    height:auto;
+    padding: 20px;
   }
   .second-container h1 {
     font-size: 2.5em;
@@ -80,8 +81,39 @@
     font-size: 1.3em;
   }
   .second-container img {
-    max-width: 100%;
+    width:100%;
+    max-width: 600px;
     min-height: 200px;
+  }
+  .second-container .buttons {
+    display: flex;
+  }
+  
+  .second-container .more-btn {
+    padding: 11px 21px;
+    border-radius: 35px;
+    font-size: 17px;
+    background-color: rgb(0, 113, 227);
+    color: white;
+    outline: none;
+    border: none;
+    margin-right: 17px;
+  }
+  .second-container .more-btn:hover {
+    background-color: rgb(0, 119, 237);
+  }
+  .second-container .buy-btn {
+    padding: 11px 21px;
+    border-radius: 35px;
+    font-size: 17px;
+    background: transparent;
+    color: rgb(0, 113, 227);
+    outline: none;
+    border: 1px solid rgb(0, 113, 227);
+  }
+  .second-container .buy-btn:hover {
+    background-color: rgb(0, 119, 237);
+    color: white;
   }
  
  
@@ -94,7 +126,9 @@
 }
 @media (max-width: 480px) {
   .second-container{
-    height:70vh;
+    height:auto;
+
+    padding:20px;
   }
   .second-container h1 {
     font-size: 2em;
@@ -103,9 +137,42 @@
     font-size: 1.1em;
   }
   .second-container img {
-    max-width: 100%;
+    width:100%;
+    max-width: 400px;
     min-height: 150px;
   }
+
+  .second-container .buttons {
+    display: flex;
+  }
+  
+  .second-container .more-btn {
+    padding: 5px 11px;
+    border-radius: 35px;
+    font-size: 11px;
+    background-color: rgb(0, 113, 227);
+    color: white;
+    outline: none;
+    border: none;
+    margin-right: 17px;
+  }
+  .second-container .more-btn:hover {
+    background-color: rgb(0, 119, 237);
+  }
+  .second-container .buy-btn {
+    padding: 5px 11px;
+    border-radius: 35px;
+    font-size: 11px;
+    background: transparent;
+    color: rgb(0, 113, 227);
+    outline: none;
+    border: 1px solid rgb(0, 113, 227);
+  }
+  .second-container .buy-btn:hover {
+    background-color: rgb(0, 119, 237);
+    color: white;
+  }
+ 
  
   .second-container p {
     font-size: 12px;

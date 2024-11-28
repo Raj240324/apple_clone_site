@@ -11,11 +11,11 @@ const Navbar = () => {
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
-      setVisible(false); // Hide navbar when scrolling down
+      setVisible(false); 
     } else {
-      setVisible(true);  // Show navbar when scrolling up
+      setVisible(true); 
     }
-    setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); // For Mobile or negative scrolling
+    setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); 
   };
 
   useEffect(() => {

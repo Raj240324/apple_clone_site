@@ -22,19 +22,6 @@ const Fourth = () => {
         </div>
         <div className="fourth-right-container">
           <img className="person" src={person} alt="" />
-          <div className="black"></div>
-
-          <div className="white-content">
-            <h1>AirPods 4</h1>
-            <h3>Iconic. Now Supersonic.</h3>
-            <h3>
-              Available with Active cancellation.<sup>2</sup>
-            </h3>
-            <div className="buttons">
-              <button className="more-btn">Learn more</button>
-              <button className="buy-btn">Buy</button>
-            </div>
-          </div>
         </div>
       </div>
     </>

@@ -6,11 +6,12 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px) brightness(0.9) contrast(120%);
-    position: fixed;
+    position: sticky;
     top:0;
     z-index: 3;
     opacity:90%;
     transition: top 0.3s;
+    overflow:hidden;
 }
 .navbar-container.hidden { 
     top: -60px; 
@@ -62,8 +63,7 @@
     width:100%;
     height:43px;
     z-index:1;
-    margin-top:43px;
-    
+  
 }
 .para-content span{
     font-size: 15px;
@@ -80,6 +80,19 @@
     text-decoration: underline;
 }
 
+@media (max-width:979px){
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .list-container{
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar-container{
         display: flex;
@@ -92,7 +105,70 @@
         display: none;
     }
     .para-content{
+        color:white;
+        background-color: rgb(29, 29, 31);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:43px;
+        z-index:1;
+        padding-left: 20px;
+        padding-right: 20px;
+      
+    }
+    .para-content span{
+        font-size: 12px;
+    }
+    .para-content span a{
+        color:rgb(0, 113, 227);
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 500;
+      
+    }
+    .para-content span a:hover{
+        color:rgb(0, 113, 227);
+        text-decoration: underline;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .list-container{
         display: none;
+    }
+    .para-content{
+        color:white;
+        background-color: rgb(29, 29, 31);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:43px;
+        z-index:1;
+        padding-left: 20px;
+        padding-right: 20px;
+      
+    }
+    .para-content span{
+        font-size: 10px;
+    }
+    .para-content span a{
+        color:rgb(0, 113, 227);
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 500;
+      
+    }
+    .para-content span a:hover{
+        color:rgb(0, 113, 227);
+        text-decoration: underline;
     }
 }
 

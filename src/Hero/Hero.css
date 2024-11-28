@@ -70,9 +70,144 @@
 .hero-container p sup {
   font-size: 8px;
 }
+@media (max-width: 1200px) {
+  .hero-container {
+    height: auto;
+    padding:20px;
+
+  }
+  .hero-container h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: -15px;
+   
+  }
+  .hero-container h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  .hero-container img {
+    width: 100%;
+    max-width: 600px;
+
+    box-shadow: 3px 3px 5px rgb(52, 27, 22), -3px -3px 5px rgb(52, 27, 22),
+      3px -3px 5px rgb(52, 27, 22),
+  }
+  .hero-container .buttons {
+    display: flex;
+  }
+  .hero-container .more-btn {
+    padding: 11px 21px;
+    border-radius: 35px;
+    font-size: 17px;
+    background-color: rgb(0, 113, 227);
+    color: white;
+    outline: none;
+    border: none;
+    margin-right: 17px;
+  }
+  .hero-container .more-btn:hover {
+    background-color: rgb(0, 119, 237);
+  }
+  .hero-container .buy-btn {
+    padding: 11px 21px;
+    border-radius: 35px;
+    font-size: 17px;
+    background: transparent;
+    color: rgb(0, 113, 227);
+    outline: none;
+    border: 1px solid rgb(0, 113, 227);
+  }
+  .hero-container .buy-btn:hover {
+    background-color: rgb(0, 119, 237);
+    color: white;
+  }
+  .hero-container p {
+    font-size: 14px;
+  }
+  .hero-container p sup {
+    font-size: 7px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .hero-container {
+    height: auto;
+    padding:20px;
+ 
+  }
+  .hero-container h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: -15px;
+   
+  }
+  .hero-container h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  .hero-container img {
+    width: 100%;
+    max-width: 600px;
+
+    box-shadow: 3px 3px 5px rgb(52, 27, 22), -3px -3px 5px rgb(52, 27, 22),
+      3px -3px 5px rgb(52, 27, 22),
+  }
+  .hero-container .buttons {
+    display: flex;
+  }
+  .hero-container .more-btn {
+    padding: 11px 21px;
+    border-radius: 35px;
+    font-size: 17px;
+    background-color: rgb(0, 113, 227);
+    color: white;
+    outline: none;
+    border: none;
+    margin-right: 17px;
+  }
+  .hero-container .more-btn:hover {
+    background-color: rgb(0, 119, 237);
+  }
+  .hero-container .buy-btn {
+    padding: 11px 21px;
+    border-radius: 35px;
+    font-size: 17px;
+    background: transparent;
+    color: rgb(0, 113, 227);
+    outline: none;
+    border: 1px solid rgb(0, 113, 227);
+  }
+  .hero-container .buy-btn:hover {
+    background-color: rgb(0, 119, 237);
+    color: white;
+  }
+  .hero-container p {
+    font-size: 14px;
+  }
+  .hero-container p sup {
+    font-size: 7px;
+  }
+}
+
+
+
+
 @media (max-width: 768px) {
   .hero-container {
-    height: 100vh;
+    height: auto;
+    padding:20px;
   }
   .hero-container h1 {
     color: white;
@@ -132,8 +267,9 @@
 }
 @media (max-width: 480px) {
   .hero-container {
-    height: 60vh;
-    margin-top:43px;
+    height: auto;
+    padding:20px;
+ 
   }
   .hero-container h1 {
     color: white;
@@ -186,7 +322,7 @@
   }
   .hero-container p {
     font-size: 13px;
-    margin-bottom:10px;
+  
   }
   .hero-container p sup {
     font-size: 6px;

@@ -1,153 +1,231 @@
+.third-container {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  margin-top: 12px;
+  padding: 40px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  
+.third-container h1 {
+  color: white;
+  text-align: center;
+  font-size: 3.2em;
+}
+
+.third-container h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.third-container .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.third-container .more-btn,
+.third-container .buy-btn {
+  padding: 11px 21px;
+  border-radius: 35px;
+  font-size: 17px;
+  margin: 10px;
+  outline: none;
+}
+
+.third-container .more-btn {
+  background-color: rgb(0, 113, 227);
+  color: white;
+  border: none;
+}
+
+.third-container .more-btn:hover {
+  background-color: rgb(0, 119, 237);
+}
+
+.third-container .buy-btn {
+  background: transparent;
+  color: rgb(0, 113, 227);
+  border: 1px solid rgb(0, 113, 227);
+}
+
+.third-container .buy-btn:hover {
+  background-color: rgb(0, 119, 237);
+  color: white;
+}
+
+.third-container img {
+  width: 100%;
+  max-width: 900px;
+  min-height: 200px;
+  margin: 30px auto;
+}
+
+.third-container p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(134, 134, 139);
+  margin: 10px 20px;
+}
+
+.last-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: -50px;
+}
+
+.third-container h2 {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 500;
+  background: linear-gradient(to right, rgb(178, 100, 252), rgb(243, 74, 63));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.third-container p sup {
+  font-size: 8px;
+  color: rgb(134, 134, 139);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .third-container {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    margin-top: 12px;
-    padding: 40px 0;
-    box-sizing: border-box; 
-  }
-  
-  .third-container h1 {
-    color: white;
-    text-align: center;
-    font-size: 3.2em;
-  }
-  
-  .third-container h3 {
-    color: white;
-    text-align: center;
-    font-size: 1.7em;
-    font-weight: 500;
-    margin-top: 10px;
-  }
-  
-  .third-container .buttons {
+    height: auto;
+    padding: 20px 10px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
-    margin-top: 20px;
+    flex-direction: column;
   }
-  
+  .third-container h1 {
+    font-size: 2.5em;
+  }
+  .third-container h3 {
+    font-size: 1.3em;
+  }
+  .third-container img {
+    width: 100%;
+    max-width: 700px;
+    min-height: 150px;
+  }
+  .third-container .buttons {
+    display: flex;
+  }
+
   .third-container .more-btn,
   .third-container .buy-btn {
     padding: 11px 21px;
     border-radius: 35px;
     font-size: 17px;
-    margin: 10px; 
+    margin: 10px;
     outline: none;
   }
-  
+
   .third-container .more-btn {
     background-color: rgb(0, 113, 227);
     color: white;
     border: none;
   }
-  
+
   .third-container .more-btn:hover {
     background-color: rgb(0, 119, 237);
   }
-  
+
   .third-container .buy-btn {
+    padding: 11px 21px;
+    border-radius: 35px;
+    font-size: 17px;
     background: transparent;
     color: rgb(0, 113, 227);
     border: 1px solid rgb(0, 113, 227);
   }
-  
+
   .third-container .buy-btn:hover {
     background-color: rgb(0, 119, 237);
     color: white;
   }
-  
+
+  .third-container p {
+    font-size: 14px;
+    margin: 10px 15px; /* Adjust margin for spacing */
+  }
+  .third-container p sup {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .third-container {
+    height: auto;
+    padding: 15px 5px;
+  }
+  .third-container h1 {
+    font-size: 2em;
+  }
+  .third-container h3 {
+    font-size: 1.1em;
+  }
+  .third-container .buttons {
+    display: flex;
+  }
+
+  .third-container .more-btn,
+  .third-container .buy-btn {
+    padding: 5px 11px;
+    border-radius: 35px;
+    font-size: 11px;
+    margin: 10px;
+    outline: none;
+  }
+
+  .third-container .more-btn {
+    background-color: rgb(0, 113, 227);
+    color: white;
+    border: none;
+  }
+
+  .third-container .more-btn:hover {
+    background-color: rgb(0, 119, 237);
+  }
+
+  .third-container .buy-btn {
+    padding: 5px 11px;
+    border-radius: 35px;
+    font-size: 11px;
+    background: transparent;
+    color: rgb(0, 113, 227);
+    border: 1px solid rgb(0, 113, 227);
+  }
+
+  .third-container .buy-btn:hover {
+    background-color: rgb(0, 119, 237);
+    color: white;
+  }
   .third-container img {
     width: 100%;
-    max-width: 900px;
-    min-height: 200px;
-    margin: 60px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
+    min-height: 100px;
   }
-  
-  .third-container p {
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    color: rgb(134, 134, 139);
-    margin: 10px 20px; 
-  }
-  
-  .last-content {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: -50px;
-  }
-  
   .third-container h2 {
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 500;
-    background: linear-gradient(to right, rgb(178, 100, 252), rgb(243, 74, 63));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    font-size: 1.1em;
+    margin-top: 20px;
   }
-  
+
+  .third-container p {
+    font-size: 12px;
+    margin: 10px 10px;
+  }
   .third-container p sup {
-    font-size: 8px;
-    color: rgb(134, 134, 139);
+    font-size: 5px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .third-container {
-      height: auto; /* Adjust height for smaller screens */
-      padding: 20px 10px; /* Adjust padding */
-    }
-    .third-container h1 {
-      font-size: 2.5em;
-    }
-    .third-container h3 {
-      font-size: 1.3em;
-    }
-    .third-container img {
-      max-width: 100%;
-      min-height: 150px;
-    }
-   
-    .third-container p {
-      font-size: 14px;
-      margin: 10px 15px; /* Adjust margin for spacing */
-    }
-    .third-container p sup {
-      font-size: 6px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .third-container {
-      height: auto; 
-      padding: 15px 5px; 
-    }
-    .third-container h1 {
-      font-size: 2em;
-    }
-    .third-container h3 {
-      font-size: 1.1em;
-    }
-    .third-container img {
-      max-width: 100%;
-      min-height: 100px;
-    }
-   
-    .third-container p {
-      font-size: 12px;
-      margin: 10px 10px; 
-    }
-    .third-container p sup {
-      font-size: 5px;
-    }
-  }
-  
+}
