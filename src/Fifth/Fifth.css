@@ -1,5 +1,3 @@
-
-
 .fifth-container {
   width: 100%;
   height: auto;
@@ -14,7 +12,8 @@
   z-index: 1;
 }
 
-.fifth-left-container, .fifth-right-container {
+.fifth-left-container,
+.fifth-right-container {
   background-color: rgb(245, 245, 247);
   text-align: center;
 }
@@ -23,17 +22,20 @@
   margin-left: 12px;
 }
 
-.fifth-left-container h1, .fifth-right-container h1 {
+.fifth-left-container h1,
+.fifth-right-container h1 {
   margin-top: 15px;
 }
 
-.fifth-left-container .buttons, .fifth-right-container .buttons {
+.fifth-left-container .buttons,
+.fifth-right-container .buttons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.fifth-left-container .more-btn, .fifth-right-container .more-btn {
+.fifth-left-container .more-btn,
+.fifth-right-container .more-btn {
   padding: 7px 15px;
   border-radius: 35px;
   font-size: 14px;
@@ -44,11 +46,13 @@
   margin-right: 17px;
 }
 
-.fifth-left-container .more-btn:hover, .fifth-right-container .more-btn:hover {
+.fifth-left-container .more-btn:hover,
+.fifth-right-container .more-btn:hover {
   background-color: rgb(0, 119, 237);
 }
 
-.fifth-left-container .buy-btn, .fifth-right-container .buy-btn {
+.fifth-left-container .buy-btn,
+.fifth-right-container .buy-btn {
   padding: 7px 15px;
   border-radius: 35px;
   font-size: 14px;
@@ -58,18 +62,21 @@
   border: 1px solid rgb(0, 113, 227);
 }
 
-.fifth-left-container .buy-btn:hover, .fifth-right-container .buy-btn:hover {
+.fifth-left-container .buy-btn:hover,
+.fifth-right-container .buy-btn:hover {
   background-color: rgb(0, 119, 237);
   color: white;
 }
 
-.fifth-left-container .macmini, .fifth-right-container .allmacs {
+.fifth-left-container .macmini,
+.fifth-right-container .allmacs {
   width: 65%;
   height: 180px;
   margin-top: 60px;
 }
 
-.fifth-left-container h2, .fifth-right-container h2 {
+.fifth-left-container h2,
+.fifth-right-container h2 {
   text-align: center;
   font-size: 1em;
   font-weight: 500;
@@ -82,11 +89,13 @@
   color: transparent;
 }
 
-.fifth-left-container p, .fifth-right-container p {
+.fifth-left-container p,
+.fifth-right-container p {
   color: rgb(110, 110, 115);
 }
 
-.fifth-left-container p sup, .fifth-right-container p sup {
+.fifth-left-container p sup,
+.fifth-right-container p sup {
   font-size: 7px;
   color: rgb(110, 110, 115);
   font-weight: bold;
@@ -99,57 +108,64 @@
     height: auto;
   }
 
-  .fifth-left-container, .fifth-right-container {
+  .fifth-left-container,
+  .fifth-right-container {
     margin: 0 0 12px 0;
   }
 
-  .fifth-left-container .macmini, .fifth-right-container .allmacs {
+  .fifth-left-container .macmini,
+  .fifth-right-container .allmacs {
     width: 80%;
     height: auto;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
-  .fifth-left-container h1, .fifth-right-container h1 {
+  .fifth-left-container h1,
+  .fifth-right-container h1 {
     font-size: 1.5em;
   }
 
-  .fifth-left-container h2, .fifth-right-container h2 {
+  .fifth-left-container h2,
+  .fifth-right-container h2 {
     font-size: 1em;
   }
 
-
-
-  .fifth-left-container p, .fifth-right-container p {
+  .fifth-left-container p,
+  .fifth-right-container p {
     font-size: 14px;
   }
 
-  .fifth-left-container p sup, .fifth-right-container p sup {
+  .fifth-left-container p sup,
+  .fifth-right-container p sup {
     font-size: 6px;
   }
 }
 
 @media (max-width: 480px) {
-  .fifth-left-container .macmini, .fifth-right-container .allmacs {
+  .fifth-left-container .macmini,
+  .fifth-right-container .allmacs {
     width: 100%;
     height: auto;
     margin-top: 20px;
   }
 
-  .fifth-left-container h1, .fifth-right-container h1 {
+  .fifth-left-container h1,
+  .fifth-right-container h1 {
     font-size: 1.2em;
   }
 
-  .fifth-left-container h2, .fifth-right-container h2 {
+  .fifth-left-container h2,
+  .fifth-right-container h2 {
     font-size: 0.9em;
   }
 
-
-
-  .fifth-left-container p, .fifth-right-container p {
+  .fifth-left-container p,
+  .fifth-right-container p {
     font-size: 12px;
   }
 
-  .fifth-left-container p sup, .fifth-right-container p sup {
+  .fifth-left-container p sup,
+  .fifth-right-container p sup {
     font-size: 5px;
   }
 }

@@ -9,13 +9,12 @@ import slider4 from "../assets/slider4.png";
 const Slider = () => {
   return (
     <>
-    
-      <Carousel 
-        arrows 
-        infinite 
-        autoplay 
-        autoplaySpeed={2000} 
-        nextArrow={<div className="custom-arrow custom-arrow-next" />} 
+      <Carousel
+        arrows
+        infinite
+        autoplay
+        autoplaySpeed={2000}
+        nextArrow={<div className="custom-arrow custom-arrow-next" />}
         prevArrow={<div className="custom-arrow custom-arrow-prev" />}
       >
         <div className="sliding">

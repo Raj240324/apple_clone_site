@@ -5,7 +5,7 @@ const Footer = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const toggleDropdown = (index) => {
- {
+    {
       setOpenDropdown(openDropdown === index ? null : index);
     }
   };
@@ -26,8 +26,7 @@ const Footer = () => {
         "Gift Cards",
       ],
     },
-   
-   
+
     {
       title: "Entertainment",
       items: [
@@ -40,7 +39,7 @@ const Footer = () => {
         "App Store",
       ],
     },
-   
+
     {
       title: "Apple Store",
       items: [
@@ -88,7 +87,11 @@ const Footer = () => {
     },
     {
       title: "For Education",
-      items: ["Apple and Education", "Shop for Education", "Shop for University"],
+      items: [
+        "Apple and Education",
+        "Shop for Education",
+        "Shop for University",
+      ],
     },
     {
       title: "For Healthcare",
@@ -102,7 +105,6 @@ const Footer = () => {
       title: "Account",
       items: ["Manage your Apple Account", "Apple Store Account", "iCloud.com"],
     },
-   
   ];
 
   return (
@@ -110,10 +112,7 @@ const Footer = () => {
       <div className="footer-grid">
         {footerData.map((section, index) => (
           <div key={index} className="footer-column">
-            <div
-              className="footer-title"
-              onClick={() => toggleDropdown(index)}
-            >
+            <div className="footer-title" onClick={() => toggleDropdown(index)}>
               <strong>{section.title}</strong>
             </div>
             {(openDropdown === index || window.innerWidth > 768) && (
@@ -125,7 +124,7 @@ const Footer = () => {
                 ))}
               </ul>
             )}
-              <hr className="hr-ruler" />
+            <hr className="hr-ruler" />
           </div>
         ))}
       </div>

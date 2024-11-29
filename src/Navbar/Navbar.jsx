@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './Navbar.css';
-import apple_logo from '../assets/apple_logo.svg';
-import search from '../assets/search.png';
-import bag from '../assets/bag.png';
+import React, { useState, useEffect } from "react";
+import "./Navbar.css";
+import apple_logo from "../assets/apple_logo.svg";
+import search from "../assets/search.png";
+import bag from "../assets/bag.png";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
@@ -11,23 +11,23 @@ const Navbar = () => {
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
-      setVisible(false); 
+      setVisible(false);
     } else {
-      setVisible(true); 
+      setVisible(true);
     }
-    setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop); 
+    setLastScrollTop(scrollTop <= 0 ? 0 : scrollTop);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollTop]);
 
   return (
     <>
-      <div className={`navbar-container ${visible ? '' : 'hidden'}`}>
+      <div className={`navbar-container ${visible ? "" : "hidden"}`}>
         <div className="apple-logo">
           <img className="logo" src={apple_logo} alt="Apple Logo" />
         </div>
@@ -52,7 +52,8 @@ const Navbar = () => {
       </div>
       <div className="para-content">
         <span>
-          Get up to ₹10000.00 instant cashback with eligible cards.± Plus up to 12 months of No Cost EMI. <a href="Shop >">Shop</a>
+          Get up to ₹10000.00 instant cashback with eligible cards.± Plus up to
+          12 months of No Cost EMI. <a href="Shop >">Shop</a>
         </span>
       </div>
     </>
@@ -61,21 +62,13 @@ const Navbar = () => {
 
 export default Navbar;
 
-
-
-
-
-
 // import React, { useState } from "react";
 // import "./Navbar.css";
 // import apple_logo from "../assets/apple_logo.svg";
 // import search from "../assets/search.png";
 // import bag from "../assets/bag.png";
 
-
 // const Navbar = () => {
-
-
 
 //   return (
 //     <>
@@ -110,5 +103,3 @@ export default Navbar;
 // };
 
 // export default Navbar;
-
-

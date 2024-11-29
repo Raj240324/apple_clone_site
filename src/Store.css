@@ -1,41 +1,40 @@
-.store-container{
-    margin-top:0;
-    background-color: rgb(22, 22, 23);
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 100%;
-    padding: 20px;
-    display:none;
+.store-container {
+  margin-top: 0;
+  background-color: rgb(22, 22, 23);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+  padding: 20px;
+  display: none;
 }
-.shop-list, .quick-link-container, .special-container{
-
-    margin-left: 50px;
-    text-align: start;
-    padding-left:50px;
-   
+.shop-list,
+.quick-link-container,
+.special-container {
+  margin-left: 50px;
+  text-align: start;
+  padding-left: 50px;
 }
 
-
-.shop-list p, .quick-link-container p, .special-container p{
-    font-size: 12px;
-    color:grey;
-    margin-bottom:20px;
-
+.shop-list p,
+.quick-link-container p,
+.special-container p {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 20px;
 }
-.shop-list li{
-    font-size: 1.3em;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 15px;
-    list-style-type: none;
-   
-
+.shop-list li {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+  list-style-type: none;
 }
-.quick-link-container ul li, .special-container ul li{
-    color:white;
-    margin-bottom: 10px;
-    list-style-type: none;
-    font-size: 13px;
-    font-weight: bold;
+.quick-link-container ul li,
+.special-container ul li {
+  color: white;
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: bold;
 }

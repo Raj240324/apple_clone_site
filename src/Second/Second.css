@@ -21,7 +21,6 @@
   color: white;
   text-align: center;
   font-size: 3.2em;
-  
 }
 .second-container h3 {
   color: white;
@@ -34,20 +33,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; 
-
+  height: auto;
 }
-
-
 
 .centered-image img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
 
 .second-container .buttons {
   display: flex;
@@ -93,8 +85,8 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .second-container{
-    height:auto;
+  .second-container {
+    height: auto;
     padding: 20px;
   }
   .second-container h1 {
@@ -103,15 +95,15 @@
   .second-container h3 {
     font-size: 1.3em;
   }
-  .centered-image{
-    width:100%;
+  .centered-image {
+    width: 100%;
     max-width: 600px;
     min-height: 200px;
   }
   .second-container .buttons {
     display: flex;
   }
-  
+
   .second-container .more-btn {
     padding: 11px 21px;
     border-radius: 35px;
@@ -138,8 +130,7 @@
     background-color: rgb(0, 119, 237);
     color: white;
   }
- 
- 
+
   .second-container p {
     font-size: 14px;
   }
@@ -148,10 +139,10 @@
   }
 }
 @media (max-width: 480px) {
-  .second-container{
-    height:auto;
+  .second-container {
+    height: auto;
 
-    padding:20px;
+    padding: 20px;
   }
   .second-container h1 {
     font-size: 2em;
@@ -159,8 +150,8 @@
   .second-container h3 {
     font-size: 1.1em;
   }
-  .centered-image{
-    width:100%;
+  .centered-image {
+    width: 100%;
     max-width: 400px;
     min-height: 150px;
   }
@@ -168,7 +159,7 @@
   .second-container .buttons {
     display: flex;
   }
-  
+
   .second-container .more-btn {
     padding: 5px 11px;
     border-radius: 35px;
@@ -195,8 +186,7 @@
     background-color: rgb(0, 119, 237);
     color: white;
   }
- 
- 
+
   .second-container p {
     font-size: 12px;
   }

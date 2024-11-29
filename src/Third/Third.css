@@ -65,11 +65,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; 
-
+  height: 200px;
 }
-
-
 
 .third-image img {
   max-width: 100%;
@@ -124,7 +121,7 @@
   .third-image {
     width: 100%;
     max-width: 700px;
-    height:120px;
+    height: 120px;
   }
   .third-container .buttons {
     display: flex;
@@ -222,11 +219,10 @@
   .third-image {
     width: 100%;
     max-width: 400px;
-    height:auto;
+    height: auto;
   }
   .third-container h2 {
     font-size: 1.1em;
-
   }
 
   .third-container p {
