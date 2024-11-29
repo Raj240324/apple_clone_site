@@ -10,6 +10,19 @@
   text-align: center;
   color: white;
 }
+.hero-container {
+  position: relative;
+  padding-top: 3%;
+  overflow: hidden;
+  max-width: 100%;
+}
+.hero-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .hero-container h1 {
   color: white;
@@ -34,11 +47,11 @@
 .hero-container .buttons {
   display: flex;
 }
-.hero-container .more-btn {
-  padding: 11px 21px;
+.buttons  .more-btn {
+  padding: 21px 21px;
   border-radius: 35px;
   font-size: 17px;
-  background-color: rgb(0, 113, 227);
+  background-color: rgb(0, 113, 227); 
   color: white;
   outline: none;
   border: none;
@@ -48,7 +61,7 @@
   background-color: rgb(0, 119, 237);
 }
 .hero-container .buy-btn {
-  padding: 11px 21px;
+  padding: 20px 21px;
   border-radius: 35px;
   font-size: 17px;
   background: transparent;
@@ -68,20 +81,18 @@
   color: rgb(134, 134, 139);
 }
 .hero-container p sup {
-  font-size: 8px;
+  font-size: 8px; 
 }
 @media (max-width: 1200px) {
   .hero-container {
     height: auto;
-    padding:20px;
-
+    padding: 20px;
   }
   .hero-container h1 {
     color: white;
     text-align: center;
     font-size: 2.2em;
     margin-bottom: -15px;
-   
   }
   .hero-container h3 {
     color: white;
@@ -99,7 +110,7 @@
   .hero-container .buttons {
     display: flex;
   }
-  .hero-container .more-btn {
+  .buttons .more-btn {
     padding: 11px 21px;
     border-radius: 35px;
     font-size: 17px;
@@ -132,24 +143,17 @@
     font-size: 7px;
   }
 }
-
-
-
-
-
 
 @media (max-width: 992px) {
   .hero-container {
     height: auto;
-    padding:20px;
- 
+    padding: 20px;
   }
   .hero-container h1 {
     color: white;
     text-align: center;
     font-size: 2.2em;
     margin-bottom: -15px;
-   
   }
   .hero-container h3 {
     color: white;
@@ -201,20 +205,16 @@
   }
 }
 
-
-
-
 @media (max-width: 768px) {
   .hero-container {
     height: auto;
-    padding:20px;
+    padding: 20px;
   }
   .hero-container h1 {
     color: white;
     text-align: center;
     font-size: 2.2em;
     margin-bottom: -15px;
-   
   }
   .hero-container h3 {
     color: white;
@@ -229,6 +229,8 @@
     box-shadow: 3px 3px 5px rgb(52, 27, 22), -3px -3px 5px rgb(52, 27, 22),
       3px -3px 5px rgb(52, 27, 22),
   }
+
+ 
   .hero-container .buttons {
     display: flex;
   }
@@ -268,15 +270,14 @@
 @media (max-width: 480px) {
   .hero-container {
     height: auto;
-    padding:20px;
- 
+    padding: 20px;
   }
   .hero-container h1 {
     color: white;
     text-align: center;
     font-size: 1.2em;
     margin-bottom: -15px;
-    margin-top:20px;
+    margin-top: 20px;
   }
   .hero-container h3 {
     color: white;
@@ -322,7 +323,6 @@
   }
   .hero-container p {
     font-size: 13px;
-  
   }
   .hero-container p sup {
     font-size: 6px;

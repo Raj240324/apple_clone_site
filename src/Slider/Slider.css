@@ -1,16 +1,66 @@
+
 .sliding{
-    width:80%;
+    width:100%;
     height:auto;
-    overflow: hidden;
-    display: inline-block;
-    
-}
+    background-color: black;
 
-.sliding img{
-    width:80%;
-    height:100%;
-    object-fit: cover;
-    margin:12px auto;
-    display: block;
 }
+.sliding img {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
 
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black; 
+    z-index: 2;
+    cursor: pointer;
+  }
+
+
+
+  
+
+  .custom-arrow-prev {
+    left: -40px;
+    color: black; 
+    background-image: none;
+    border-color: black;
+  }
+  
+  .custom-arrow-next {
+    right: -40px;
+    color: black; 
+    background-image: none;
+    border-color: black;
+  }
+  .custom-arrow-prev::before,
+  .custom-arrow-next::before{
+    color: black;
+  }
+  
+  
+
+  @media screen and (max-width: 768px) {
+    .custom-arrow-prev,
+    .custom-arrow-next {
+      font-size: 18px;
+      left: -25px;
+      right: -25px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .custom-arrow-prev,
+    .custom-arrow-next {
+      font-size: 14px;
+      left: -15px;
+      right: -15px;
+    }
+  }
+  
