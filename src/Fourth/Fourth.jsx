@@ -3,7 +3,7 @@ import { Button, Modal } from "antd";
 import "./Fourth.css";
 import apple_logo from "../assets/applelogoblack.png";
 import watch from "../assets/watch.png";
-import person from "../assets/person.png";
+import personfull1 from "../assets/personfull1.png";
 const Fourth = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const showModal = () => {
@@ -53,7 +53,37 @@ const Fourth = () => {
           <img className="watch" src={watch} alt="" />
         </div>
         <div className="fourth-right-container">
-          <img className="person" src={person} alt="" />
+          <img className="person" src={personfull1} alt="" />
+          <div className="fourth-right-content">
+            <h3>AirPods 4</h3>
+            <h4>Iconic. Now Supersonic.</h4>
+            <h4>Available with Active Noise Cancellation.<sup>2</sup></h4>
+
+            <div className="buttons">
+            <button className="more-btn">
+              <a
+                href="https://www.apple.com/in/airpods-4/"
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                Learn more
+              </a>
+            </button>
+
+            <Button className="buy-btn" type="primary" onClick={showModal}>
+              {" "}
+              Buy{" "}
+            </Button>
+            <Modal
+              title="Purchase Confirmation"
+              visible={isModalVisible}
+              onOk={handleOk}
+              onCancel={handleCancel}
+            >
+              <p>Are you sure you want to purchase this item?</p>
+            </Modal>
+          </div>
+          </div>
         </div>
       </div>
     </>

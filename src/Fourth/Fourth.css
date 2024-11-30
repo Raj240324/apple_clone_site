@@ -8,7 +8,6 @@
   padding: 0 12px;
   box-sizing: border-box;
   overflow: hidden;
-  position: relative;
   z-index: 1;
 }
 
@@ -45,6 +44,7 @@
 .fourth-left-container .watch {
   width: 100%;
 }
+
 
 .fourth-container .buttons {
   display: flex;
@@ -92,26 +92,56 @@
   margin: 0 0 0 12px;
 }
 
-.fourth-right-container .person {
+
+
+.fourth-right-container .person{
+
   width: 100%;
+  height: 100%;
   object-fit: cover;
+
+}
+.fourth-right-container .fourth-right-content{
+  margin-top:-180px;
+  margin-bottom:20px;
+ 
+ 
+}
+.fourth-right-content h3{
+  color:white;
+  font-size: 2.2em;
+}
+.fourth-right-content h4{
+  color:white;
+  font-size: 1.2em;
 }
 
+@media (max-width:992px){
 
-@media (max-width:992px){
+  
   .fourth-right-container .person {
     width: 100%;
+    height:100%;
     object-fit: cover;
-    margin-top:20px;
+
+  }
+
+  .fourth-right-container .fourth-right-content{
+    margin-top:-160px;
+    margin-bottom:10px;
+   
+   
+  }
+  .fourth-right-content h3{
+    color:white;
+    font-size: 2.0em;
+  }
+  .fourth-right-content h4{
+    color:white;
+    font-size: 1em;
   }
 }
-@media (max-width:992px){
-  .fourth-right-container .person {
-    width: 100%;
-    object-fit: cover;
-    margin-top:65px;
-  }
-}
+
 
 
 
@@ -126,19 +156,67 @@
   .fourth-right-container {
     margin: 0 0 12px 0;
   }
+
   .fourth-right-container .person {
     width: 100%;
+    height:100%;
     object-fit: cover;
+
   }
+
+  .fourth-right-container .fourth-right-content{
+    margin-top:-190px;
+    margin-bottom:10px;
+
+   
+   
+  }
+  .fourth-right-content h3{
+    color:white;
+    font-size: 2.4em;
+  }
+  .fourth-right-content h4{
+    color:white;
+    font-size: 1.2em;
+  }
+
+
+
  }
+
 
 @media (max-width: 480px) {
   .fourth-left-container h3,
   .fourth-left-container h2{
         font-size: 1em;
   }
+
   .fourth-right-container .person {
     width: 100%;
     object-fit: cover;
+
   }
+
+  .fourth-right-container .fourth-right-content{
+    margin-top:-130px;
+    margin-bottom:50px;
+
+   
+   
+  }
+  .fourth-right-content h3{
+    color:white;
+    font-size: 1.2em;
+
+  }
+  .fourth-right-content h4{
+    color:white;
+    font-size: 0.9em;
+  }
+
+
+
+
+
+
 }
