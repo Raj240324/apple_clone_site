@@ -54,9 +54,7 @@ const Hero = () => {
      
        <Button type="primary" onClick={showMoreModal} className="more-btn"> Learn more </Button> 
             <Modal title="Product Details" visible={isMoreModalVisible} onOk={morehandleOk} onCancel={morehandleCancel} > 
-            <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
-              <img src={iphone16pro} alt="Product" style={{ width: '100%',maxWidth:"250px", height: "250px", objectFit:"contain"}} />
-              </div>
+              <img src={iphone16pro} alt="Product" style={{ width: '100%',maxWidth:"250px", height: "250px", marginLeft:"100px"}} />
               <p><strong>1.Powerful Performance: </strong>
               Equipped with M-series chips for blazing-fast speed, multitasking, and professional-grade tasks.</p>
               <p><strong>2. Stunning Display: </strong>
