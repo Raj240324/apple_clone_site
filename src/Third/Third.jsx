@@ -4,6 +4,9 @@ import "./Third.css";
 import applemac from "../assets/applemac.png";
 import { Image } from "antd";
 import macbookpro from "../assets/macbookpro.jpg";
+import mac1 from "../assets/mac1.png";
+import mac2 from "../assets/mac2.png";
+import mac3 from "../assets/mac3.png";
 
 const Third = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -88,13 +91,7 @@ const Third = () => {
         </div>
 
         <div className="third-image">
-          <Image.PreviewGroup
-            items={[
-              "https://www.digitaltrends.com/wp-content/uploads/2021/11/macbook-pro-2021-01.jpg?fit=1500%2C1000&p=1",
-              "https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_16-inch-Screen_10182021_big_carousel.jpg.large.jpg",
-              "https://images.macrumors.com/t/4ssIz-tzmptgrsGY61DNGGY7PFw=/1600x0/article-new/2024/10/M4-MacBook-Pro-Thumb-2.jpg",
-            ]}
-          >
+          <Image.PreviewGroup items={[mac1, mac2, mac3]}>
             <Image width={700} src={applemac} />
           </Image.PreviewGroup>
         </div>
