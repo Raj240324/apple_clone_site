@@ -103,14 +103,12 @@
   .hero-container h1 {
     color: white;
     text-align: center;
-    font-size: 2.2em;
-    margin-bottom: -15px;
+    font-size: 3.2em;
   }
   .hero-container h3 {
     color: white;
     text-align: center;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.7em;
   }
   .hero-container h4 {
     position: absolute;
@@ -173,14 +171,12 @@
   .hero-container h1 {
     color: white;
     text-align: center;
-    font-size: 2.2em;
-    margin-bottom: -15px;
+    font-size: 2.8em;
   }
   .hero-container h3 {
     color: white;
     text-align: center;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.4em;
   }
   .hero-container h4 {
     position: absolute;
@@ -244,14 +240,12 @@
   .hero-container h1 {
     color: white;
     text-align: center;
-    font-size: 2.2em;
-    margin-bottom: -15px;
+    font-size: 2.5em;
   }
   .hero-container h3 {
     color: white;
     text-align: center;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.3em;
   }
   .hero-container h4 {
     position: absolute;
@@ -303,7 +297,7 @@
     font-size: 14px;
   }
   .hero-container p sup {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 @media (max-width: 480px) {
@@ -314,15 +308,12 @@
   .hero-container h1 {
     color: white;
     text-align: center;
-    font-size: 1.2em;
-    margin-bottom: -15px;
-    margin-top: 20px;
+    font-size: 2em;
   }
   .hero-container h3 {
     color: white;
     text-align: center;
-    font-size: 0.9em;
-    font-weight: 500;
+    font-size: 1.1em;
   }
   .hero-container h4 {
     position: absolute;
