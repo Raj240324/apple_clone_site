@@ -6,16 +6,12 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px) brightness(0.9) contrast(120%);
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  opacity: 90%;
+  padding: 10px 20px;
+  position: relative;
   transition: top 0.3s;
-  overflow: hidden;
+  z-index: 1000;
 }
-.navbar-container.hidden {
-  top: -60px;
-}
+
 .apple-logo .logo {
   width: 15px;
   margin-right: 41px;
@@ -25,30 +21,99 @@
 }
 
 .list-container {
-  display: flex;
   color: white;
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
+
 .list-container li {
+  position: relative;
+  cursor: pointer;
+}
+
+.list-container li a {
   margin-right: 41px;
   font-size: 12px;
   font-weight: 500;
   color: rgb(204, 204, 204);
   cursor: pointer;
   opacity: 100%;
+  text-decoration: none;
 }
-.list-container li:hover {
+
+.list-container li:hover a {
   color: rgb(255, 255, 255);
 }
-.search-icon {
-  width: 20px;
-  margin-right: 41px;
-  cursor: pointer;
+
+.dropdown-container {
+  display: flex;
+  top:100%;
+  position: fixed;
+  background-color: rgb(35, 34, 34);
+  width: 100vw;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 40px 40px;
+  animation: fadeIn 0.5s ease-in-out;
+
+
 }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown1 li,
+.dropdown2 li,
+.dropdown3 li {
+  font-size: 12px;
+  list-style: none;
+  padding: 10px 80px;
+  color: rgb(134, 134, 139);
+}
+.dropdown1 li a {
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 10px;
+}
+
+.dropdown2 li a,
+.dropdown3 li a {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.search-bag-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.search-bag-container .search-icon {
+  margin-right: 15px;
+}
+
+.search-icon,
 .bag-icon {
   width: 20px;
   cursor: pointer;
 }
+
+.search-icon:hover,
+.bag-icon:hover {
+  transform: scale(1.1);
+}
+
 .para-content {
   color: white;
   font-size: 12px;
@@ -64,6 +129,7 @@
 .para-content span {
   font-size: 15px;
 }
+
 .para-content span a {
   color: rgb(0, 113, 227);
   text-decoration: none;
